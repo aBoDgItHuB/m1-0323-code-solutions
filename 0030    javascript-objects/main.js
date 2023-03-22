@@ -1,4 +1,4 @@
-var student = {
+const student = {
   firstName: 'Young Jae',
   lastName: 'KIM',
   age: 40
@@ -14,7 +14,7 @@ console.log('value of livesInIrvine:', student.livesInIrvine);
 console.log('value of previousOccupation:', student.previousOccupation);
 console.log('value of student:', student);
 
-var vehicle = {
+const vehicle = {
   make: 'Ford',
   model: 'Mustang',
   year: 1970
@@ -27,7 +27,7 @@ console.log('value of color:', vehicle.color);
 console.log('value of isConvertible:', vehicle.isConvertible);
 console.log('value of vehicle:', vehicle);
 
-var pet = {
+const pet = {
   name: 'Bori',
   type: 'Kitten'
 };
