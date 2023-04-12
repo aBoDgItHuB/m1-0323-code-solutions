@@ -10,40 +10,44 @@
  */
 // isUnderFive
 function isUnderFive(number) {
-  console.log('Value of isUnderFive(' + number + '): ', number < 5);
+  const isUnderFive = number < 5;
+  return isUnderFive;
 }
 
-isUnderFive(4);
-isUnderFive(10);
-isUnderFive(5);
+console.log('Value of isUnderFive(4)', isUnderFive(4));
+console.log('Value of isUnderFive(10)', isUnderFive(10));
+console.log('Value of isUnderFive(5)', isUnderFive(5));
 
 // isEven
 function isEven(number) {
-  console.log('Value of isEven(' + number + '): ', number % 2 === 0);
+  const isEven = number % 2 === 0;
+  return isEven;
 }
 
-isEven(4);
-isEven(10);
-isEven(5);
+console.log('Value of isEven(4)', isEven(4));
+console.log('Value of isEven(10)', isEven(10));
+console.log('Value of isEven(5)', isEven(5));
 
 // startsWithJ
 function startsWithJ(string) {
-  console.log('Value of startsWithJ(' + string + '): ', Array.from(string)[0] === 'J');
+  const startsWithJ = Array.from(string)[0] === 'J';
+  return startsWithJ;
 }
 
-startsWithJ('Javascript');
-startsWithJ('PHP');
-startsWithJ('HTML');
-startsWithJ('Java');
-startsWithJ('Kotlin');
-startsWithJ('C#');
+console.log('Value of startsWithJ(\'Javascript\')', startsWithJ('Javascript'));
+console.log('Value of startsWithJ(\'PHP\')', startsWithJ('PHP'));
+console.log('Value of startsWithJ(\'HTML\');', startsWithJ('HTML'));
+console.log('Value of startsWithJ(\'Java\')', startsWithJ('Java'));
+console.log('Value of startsWithJ(\'Kotlin\')', startsWithJ('Kotlin'));
+console.log('Value of startsWithJ(\'C#\')', startsWithJ('C#'));
 
 // isOldEnoughToDrink
 function isOldEnoughToDrink(person = {
   name: null,
   age: null
 }) {
-  console.log('Value of isOldEnoughDrink(' + person.age + '): ', person.age >= 21);
+  const isOldEnoughToDrink = person.age >= 21;
+  return isOldEnoughToDrink;
 }
 
 const person = {
@@ -51,14 +55,15 @@ const person = {
   age: 40
 };
 
-isOldEnoughToDrink(person);
+console.log('Value of isOldEnoughToDrink(person)', isOldEnoughToDrink(person));
 
 // isOldEnoughToDrive
 function isOldEnoughToDrive(person = {
   name: null,
   age: null
 }) {
-  console.log('Value of isOldEnoughDrive(' + person.age + '): ', person.age >= 16);
+  const isOldEnoughToDrive = person.age >= 16;
+  return isOldEnoughToDrive;
 }
 
 const child = {
@@ -66,92 +71,105 @@ const child = {
   age: 12
 };
 
-isOldEnoughToDrive(child);
+console.log('Value of isOldEnoughToDrive(child)', isOldEnoughToDrive(child));
 
 // isOldEnoughToDrinkAndDrive
 function isOldEnoughToDrinkAndDrive(person = {
   name: null,
   age: null
 }) {
-  console.log('Value of isOldEnoughDriveAndDrink(' + person.age + '): ', false);
+  const isOldEnoughToDrinkAndDrive = false; // force to be false.
+  return isOldEnoughToDrinkAndDrive;
 }
 
-isOldEnoughToDrinkAndDrive(person);
+console.log('Value of isOldEnoughToDrinkAndDrive(person)', isOldEnoughToDrinkAndDrive(person));
 
 // categorizeAcidity
 function categorizeAcidity(pH) {
+  let categorizeAcidity;
+
   if (pH === 7) {
-    console.log('Value of categorizeAcidity(' + pH + '): ', 'neutral');
+    categorizeAcidity = 'neutral';
   } else if (pH >= 0 && pH < 7) {
-    console.log('Value of categorizeAcidity(' + pH + '): ', 'acid');
+    categorizeAcidity = 'acid';
   } else if (pH > 7 && pH <= 14) {
-    console.log('Value of categorizeAcidity(' + pH + '): ', 'base');
+    categorizeAcidity = 'base';
   } else {
-    console.log('Value of categorizeAcidity(' + pH + '): ', 'invalid pH level');
+    categorizeAcidity = 'invalid pH level';
   }
+
+  return categorizeAcidity;
 }
 
-categorizeAcidity(-1);
-categorizeAcidity(14.0000001);
-categorizeAcidity(7);
-categorizeAcidity(2);
-categorizeAcidity(9);
+console.log('Value of categorizeAcidity(-1)', categorizeAcidity(-1));
+console.log('Value of categorizeAcidity(14.0000001)', categorizeAcidity(14.0000001));
+console.log('Value of categorizeAcidity(7)', categorizeAcidity(7));
+console.log('Value of categorizeAcidity(2)', categorizeAcidity(2));
+console.log('Value of categorizeAcidity(9)', categorizeAcidity(9));
 
 // introduceWarnerBro
 function introduceWarnerBro(name) {
+  let introduceWarnerBro;
+
   switch (name) {
     case 'yakko':
-      console.log('Value of introduceWarnerBro(' + name + '): ', 'We\'re the warner brothers!');
+      introduceWarnerBro = 'We\'re the warner brothers!';
       break;
     case 'wakko':
-      console.log('Value of introduceWarnerBro(' + name + '): ', 'We\'re the warner brothers!');
+      introduceWarnerBro = 'We\'re the warner brothers!';
       break;
     case 'dot':
-      console.log('Value of introduceWarnerBro(' + name + '): ', 'I\'m cute~');
+      introduceWarnerBro = 'I\'m cute~';
       break;
     default:
-      console.log('Value of introduceWarnerBro(' + name + '): ', 'Good night everybody!');
+      introduceWarnerBro = 'Good night everybody!';
       break;
   }
+
+  return introduceWarnerBro;
 }
 
-introduceWarnerBro('yakko');
-introduceWarnerBro('wakko');
-introduceWarnerBro('dot');
-introduceWarnerBro('cody');
-introduceWarnerBro('minerva');
+console.log('Value of introduceWarnerBro(\'yakko\')', introduceWarnerBro('yakko'));
+console.log('Value of introduceWarnerBro(\'wakko\')', introduceWarnerBro('wakko'));
+console.log('Value of introduceWarnerBro(\'dot\')', introduceWarnerBro('dot'));
+console.log('Value of introduceWarnerBro(\'cody\')', introduceWarnerBro('cody'));
+console.log('Value of introduceWarnerBro(\'minerva\')', introduceWarnerBro('minerva'));
 
 // recommedMovie
 function recommendMovie(genre) {
+  let recommendMovie;
+
   switch (genre) {
     case 'action':
-      console.log('Value of recommendMovie(' + genre + '): ', 'Die Hard');
+      recommendMovie = 'Die Hard';
       break;
     case 'comedy':
-      console.log('Value of recommendMovie(' + genre + '): ', 'Rush Hour');
+      recommendMovie = 'Rush Hour';
       break;
     case 'horror':
-      console.log('Value of recommendMovie(' + genre + '): ', 'Saw');
+      recommendMovie = 'Saw';
       break;
     case 'drama':
-      console.log('Value of recommendMovie(' + genre + '): ', 'Ford V Ferrai');
+      recommendMovie = 'Ford V Ferrai';
       break;
     case 'musical':
-      console.log('Value of recommendMovie(' + genre + '): ', 'Les Miserable');
+      recommendMovie = 'Les Miserable';
       break;
     case 'sci-fi':
-      console.log('Value of recommendMovie(' + genre + '): ', 'Star Wars');
+      recommendMovie = 'Star Wars';
       break;
     default:
-      console.log('Value of recommendMovie(' + genre + '): ', 'Any movie you are into');
+      recommendMovie = 'Any movie you are into';
       break;
   }
+
+  return recommendMovie;
 }
 
-recommendMovie('action');
-recommendMovie('comedy');
-recommendMovie('horror');
-recommendMovie('drama');
-recommendMovie('musical');
-recommendMovie('sci-fi');
-recommendMovie(null);
+console.log('Value of recommendMovie(\'action\')', recommendMovie('action'));
+console.log('Value of recommendMovie(\'comedy\')', recommendMovie('comedy'));
+console.log('Value of recommendMovie(\'horror\')', recommendMovie('horror'));
+console.log('Value of recommendMovie(\'drama\')', recommendMovie('drama'));
+console.log('Value of recommendMovie(\'musical\')', recommendMovie('musical'));
+console.log('Value of recommendMovie(\'sci - fi\')', recommendMovie('sci-fi'));
+console.log('Value of recommendMovie(null)', recommendMovie(null));
