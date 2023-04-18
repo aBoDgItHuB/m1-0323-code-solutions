@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>HTML Forms</title>
+</head>
+
+<body>
+  <h1>Coding Form!</h1>
+
+  <form>
+    <!-- Email - textbox -->
+    <label for="email">Email</label>
+    <div>
+      <input type="text" name="email" id="email" />
+    </div>
+
+    <!-- Coding reason / dropbox -->
+    <label for="coding_reason">Why is coding cool?</label>
+    <div>
+      <select name="coding_reason" id="coding_reason" >
+        <option value="default">Select an option</option>
+        <option value="INTR">Because it's interesting</option>
+        <option value="FUN">Because it's fun</option>
+        <option value="POWER">Because it's powerful</option>
+      </select>
+    </div>
+
+    <!-- Favorite language / radio-->
+    <p>Favorite Language (choose one)</p>
+    <div>
+      <input type="radio" name="favorite_language" id="fl_1" value="html" />
+      <label for="html">HTML</label>
+      <input type="radio" name="favorite_language" id="fl_2" value="css" />
+      <label for="css">CSS</label>
+      <input type="radio" name="favorite_language" id="fl_3" value="java_script" />
+      <label for="java_script">Java Script</label>
+    </div>
+
+    <!-- Signup . checkbox-->
+    <p>Would like to sign up for more information?</p>
+    <input type="checkbox" name="signup" id="su_1" value="1" />
+    <label for="signup">Sign me up!</label>
+
+    <!-- Comments / textbox-->
+    <div>
+      <label for="comment">Comments</label>
+    </div>
+    <textarea id="comment" name="comments"></textarea>
+
+    <!-- Submmit - button -->
+    <div>
+      <button type="submit" name="submit" id="tbx_submit">Submit</button>
+    </div>
+  </form>
+</body>
+
+</html>
