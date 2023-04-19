@@ -9,7 +9,7 @@ ANSWER: html, head, body, paragraph, image.
 - What is the purpose of HTML attributes?
 ANSWER: Adjust behavior of HTML element such as color, size, etc.
 - Give an example of an HTML entity (escape character).
-ANSWER: &, <, >, ', "
+ANSWER: &, <, >, ', " -
 
 ## Notes
 
