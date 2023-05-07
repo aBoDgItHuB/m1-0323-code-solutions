@@ -5,9 +5,9 @@
 After completing this exercise, you should be able to discuss or answer the following questions:
 
 - What is a pseudo-class?
-
+ANSWER: Selector that selects elements that are in specific state.
 - What are CSS pseudo-classes useful for?
-
+ASNWER: For marking up, maintaining code.
 
 ## Notes
 
