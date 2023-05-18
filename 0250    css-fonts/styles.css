@@ -1,0 +1,12 @@
+body {
+  font-family: 'Dancing Script', cursive;
+}
+
+h1,
+h2 {
+  font-family: 'Foldit', cursive;
+}
+
+p {
+  line-height: 2;
+}
